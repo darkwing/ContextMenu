@@ -9,7 +9,17 @@ How to Use
 ----------
 
 ContextMenu can be initialized at any time but is generally initialized at the top of the document during the page's normal load.  There are no required arguments -- only options.
-
+	
+	#HTML
+	<ul id="contextmenu">
+		<li><a href="#edit" class="edit">Edit</a></li>
+		<li class="separator"><a href="#cut" class="cut">Cut</a></li>
+		<li><a href="#copy" class="copy">Copy</a></li>
+		<li><a href="#paste" class="paste">Paste</a></li>
+		<li><a href="#delete" class="delete">Delete</a></li>
+		<li class="separator"><a href="#quit" class="quit">Quit</a></li>
+	</ul>
+	
 	#JS
 	var context = new ContextMenu({
 		targets: 'a', //menu only available on links
