@@ -3,6 +3,7 @@ ContextMenu
 
 ContextMenu is a highly customizable, compact context menu script written with CSS, XHTML, and the MooTools javascript framework. ContextMenu allows you to offer stylish, functional context menus on your website.
 
+![Screenshot](http://davidwalsh.name/dw-content/dw-context.jpg)
 
 How to Use
 ----------
