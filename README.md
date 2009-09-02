@@ -34,4 +34,4 @@ ContextMenu can be initialized at any time but is generally initialized at the t
 	});
 	
 
-For specific usage and options, please read the documentation or visit http://davidwalsh.name/mootools-context-menu
+For specific usage and options, please read the documentation or visit http://davidwalsh.name/js/contextmenu

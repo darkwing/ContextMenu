@@ -16,7 +16,7 @@ ContextMenu Method: constructor {#ContextMenu:constructor}
 
 - *ContextMenu* debuted Thursday, January 29, 2009 on the David Walsh Blog:  http://davidwalsh.name/mootools-context-menu
 - *ContextMenu* requires MooTools Core only -- no MooTools More dependencies.
-- Visit http://davidwalsh.name/mootools-context-menu for example usages.
+- Visit http://davidwalsh.name/js/contextmenu for example usages.
 
 ### Syntax:
 
