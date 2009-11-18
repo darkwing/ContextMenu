@@ -1,4 +1,4 @@
-this.ContextMenu = new Class({
+var ContextMenu = new Class({
 
 	//implements
 	Implements: [Options,Events],
