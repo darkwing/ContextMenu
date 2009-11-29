@@ -1,11 +1,20 @@
 /*
-Script: ContextMenu
+---
+description:     ContextMenu
 
-License: MIT-style license.
+authors:
+  - David Walsh (http://davidwalsh.name)
 
-Copyright: Copyright (c) 2007-2009 [David Walsh](http://davidwalsh.name/).
+license:
+  - MIT-style license
 
-Author: David Walsh (http://davidwalsh.name)
+requires:
+  core/1.2.1:   '*'
+  more/1.2.1:   'Fx.*'
+
+provides:
+  - ContextMenu
+...
 */
 var ContextMenu = new Class({
 
