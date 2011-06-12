@@ -32,7 +32,8 @@ var ContextMenu = new Class({
 		onShow: $empty,
 		onHide: $empty,
 		onClick: $empty,
-		fadeSpeed: 200
+		fadeSpeed: 200,
+		openInside: 'window' // [window, parent, false]
 	},
 
 	//initialization
@@ -67,12 +68,7 @@ var ContextMenu = new Class({
 					//record this as the trigger
 					this.options.element = document.id(el);
 					//position the menu
-					this.menu.setStyles({
-						top: (e.page.y + this.options.offsets.y),
-						left: (e.page.x + this.options.offsets.x),
-						position: 'absolute',
-						'z-index': '2000'
-					});
+					this.position(e.page);
 					//show the menu
 					this.show();
 				}
@@ -93,6 +89,30 @@ var ContextMenu = new Class({
 		document.id(document.body).addEvent('click', function() {
 			this.hide();
 		}.bind(this));
+	},
+
+	position: function(coordinates){
+		var size = this.menu.getSize(),
+		left = coordinates.x + this.options.offsets.x,
+		top = coordinates.y + this.options.offsets.y,
+		oi = this.options.openInside;
+
+		if(oi) {
+			var inside = oi == 'parent' ? this.menu.getParent().getSize() : window.getSize(); 
+			if (left + size.x > inside.x) {
+				left = inside.x - size.x;
+			}
+			if (top + size.y > inside.y) {
+				top -= size.y;
+			}
+		}
+
+		this.menu.setStyles({
+			top: top,
+			left: left,
+			position: 'absolute',
+			'z-index': '2000'
+		});
 	},
 
 	//show menu
