@@ -29,9 +29,9 @@ var ContextMenu = new Class({
 		targets: 'body',
 		trigger: 'contextmenu',
 		offsets: { x:0, y:0 },
-		onShow: $empty,
-		onHide: $empty,
-		onClick: $empty,
+		onShow: function() {},
+		onHide: function() {},
+		onClick: function() {},
 		fadeSpeed: 200
 	},
 
